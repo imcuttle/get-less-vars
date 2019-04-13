@@ -15,11 +15,35 @@
 
 @abc: me;
 
+.foods() {
+  @dessert: ice cream;
+}
+
+@config: {
+  @left_px: 10px;
+
+  @options: {
+    size: 20px;
+    @inner_px: @left_px;
+
+    @deep: {
+      @left_px: 12px;
+      @innner: @left_px;
+      abc: 9.7px;
+    };
+  };
+};
+
 .body {
   cursor: none;
+  height: @config[ @options][ @inner_px];
+  border-width: @config[ @options][ @deep][ @innner];
+  bar: @config[ @options][ @deep][ @left_px];
+  foo: @config[ @options][ @deep][abc];
 
   width: @left_px;
   color: @lg_color;
 
   @ss: 123 + 233;
+  //@left_px: 210px;
 }
