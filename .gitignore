@@ -1,0 +1,13 @@
+.idea/
+.DS_Store
+node_modules/
+dist/
+public/
+**/*debug.log
+coverage/
+.entry
+.dist
+.vscode
+
+
+!/__tests__/fixture/node_modules

@@ -1,0 +1,25 @@
+@import './normal.less';
+//@import (less) './vars.less';
+@import (reference) './vars.less';
+
+//@import '../fixture/';
+
+@color: #222;
+@lg_color: lighten(#222, 1.2);
+@sum: 123px + 233px;
+
+@ss: @abc;
+
+@left: @sum - 22;
+@left_px: @sum;
+
+@abc: me;
+
+.body {
+  cursor: none;
+
+  width: @left_px;
+  color: @lg_color;
+
+  @ss: 123 + 233;
+}
