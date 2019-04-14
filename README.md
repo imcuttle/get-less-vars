@@ -23,7 +23,7 @@ yarn add less get-less-vars
 
 ### getLessVars
 
-[lib/index.js:90-121](https://github.com/imcuttle/get-less-vars/blob/9f567727eadcfb720a47471386c105d464f4d881/lib/index.js#L90-L121 'Source code on GitHub')
+[lib/index.js:90-121](https://github.com/imcuttle/get-less-vars/blob/46e41e9256886f9cc1ad389f3416ea97eb4a6aeb/lib/index.js#L90-L121 'Source code on GitHub')
 
 - **See: [less options](http://lesscss.org/usage/#less-options)**
 
@@ -38,20 +38,20 @@ yarn add less get-less-vars
 
 ```javascript
 const getLessVars = require('get-less-vars')
-const fs = require('fs')(
-  // The contents of `/path/to/main.less`
-  // @color: white;
-  // @height: 100px;
-  // @width: 20px + @height;
-  // @height: 40px;
+const fs = require('fs')
 
-  async () => {
-    await getLessVars(fs.readFileSync('/path/to/main.less').toString(), {
-      filename: '/path/to/main.less'
-    })
-    // => {color: 'white', height: '40px', width: '60px'}
-  }
-)()
+// The contents of `/path/to/main.less`
+// @color: white;
+// @height: 100px;
+// @width: 20px + @height;
+// @height: 40px;
+
+;(async () => {
+  await getLessVars(fs.readFileSync('/path/to/main.less').toString(), {
+    filename: '/path/to/main.less'
+  })
+  // => {color: 'white', height: '40px', width: '60px'}
+})()
 ```
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;{}>**
