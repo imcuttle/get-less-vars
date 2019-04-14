@@ -29,16 +29,16 @@ yarn add less get-less-vars
 
 ### getLessVars
 
-[lib/index.js:90-121](https://github.com/imcuttle/get-less-vars/blob/46e41e9256886f9cc1ad389f3416ea97eb4a6aeb/lib/index.js#L90-L121 'Source code on GitHub')
+[lib/index.js:90-121](https://github.com/imcuttle/get-less-vars/blob/7dc54beb4dba69c599f752544e67e0d42a539f59/lib/index.js#L90-L121 "Source code on GitHub")
 
-- **See: [less options](http://lesscss.org/usage/#less-options)**
+-   **See: [less options](http://lesscss.org/usage/#less-options)**
 
 #### Parameters
 
-- `lessText` {string}
-- `options` {{}}
-  - `options.nameCase` {string}
-    Use [change-case](https://www.npmjs.com/package/change-case) for varied name case. (optional, default `null`)
+-   `lessText`  {string}
+-   `options`  {{}}
+    -   `options.nameCase`  {string}
+           Use [change-case](https://www.npmjs.com/package/change-case) for varied name case. (optional, default `null`)
 
 #### Examples
 
@@ -60,7 +60,7 @@ const fs = require('fs')
 })()
 ```
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;{}>**
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;{}>** 
 
 ## Regard as a webpack loader
 
@@ -73,17 +73,17 @@ The options extend get-less-var
 Whether disable the less plugin from [less-loader](https://github.com/webpack-contrib/less-loader/blob/3d6e9e9204a9e02cde5a65e9a9f6b10bd564f365/src/createWebpackLessPlugin.js)  
 which enhanced the `@import` like `@import '~lib/foo.less'`
 
-- **Type:** `boolean`
-- **Default:** `false`
+-   **Type:** `boolean`
+-   **Default:** `false`
 
 #### `nameCase`
 
-- **Type:** `string`
-- **Default:** `'camel'`
+-   **Type:** `string`
+-   **Default:** `'camel'`
 
 ### Example
 
-- `main.less`
+-   `main.less`
 
 ```less
 @main_color: red;
@@ -93,7 +93,7 @@ which enhanced the `@import` like `@import '~lib/foo.less'`
 };
 ```
 
-- `main.js`
+-   `main.js`
 
 ```javascript
 const { config, mainColor } = require('!get-less-vars/loader!./main.less')
@@ -103,15 +103,15 @@ const { config, mainColor } = require('!get-less-vars/loader!./main.less')
 
 ## Contributing
 
-- Fork it!
-- Create your new branch:  
-  `git checkout -b feature-new` or `git checkout -b fix-which-bug`
-- Start your magic work now
-- Make sure npm test passes
-- Commit your changes:  
-  `git commit -am 'feat: some description (close #123)'` or `git commit -am 'fix: some description (fix #123)'`
-- Push to the branch: `git push`
-- Submit a pull request :)
+-   Fork it!
+-   Create your new branch:  
+    `git checkout -b feature-new` or `git checkout -b fix-which-bug`
+-   Start your magic work now
+-   Make sure npm test passes
+-   Commit your changes:  
+    `git commit -am 'feat: some description (close #123)'` or `git commit -am 'fix: some description (fix #123)'`
+-   Push to the branch: `git push`
+-   Submit a pull request :)
 
 ## Authors
 
