@@ -12,9 +12,9 @@
 ## Installation
 
 ```bash
-npm install get-less-vars
+npm install less get-less-vars
 # or use yarn
-yarn add get-less-vars
+yarn add less get-less-vars
 ```
 
 ## API
