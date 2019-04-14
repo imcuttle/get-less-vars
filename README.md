@@ -58,6 +58,25 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ## Regard as a webpack loader
 
+### Loader Options
+
+The options extend get-less-var
+
+#### `disableWebpackLessPlugin`
+
+Whether disable the less plugin from [less-loader](https://github.com/webpack-contrib/less-loader/blob/3d6e9e9204a9e02cde5a65e9a9f6b10bd564f365/src/createWebpackLessPlugin.js)  
+which enhanced the `@import` like `@import '~lib/foo.less'`
+
+- **Type:** `boolean`
+- **Default:** `false`
+
+#### `nameCase`
+
+- **Type:** `string`
+- **Default:** `'camel'`
+
+### Example
+
 - `main.less`
 
 ```less
