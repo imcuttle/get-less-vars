@@ -1,4 +1,4 @@
-# get-less-vars (WIP)
+# get-less-vars
 
 [![Build status](https://img.shields.io/travis/imcuttle/get-less-vars/master.svg?style=flat-square)](https://travis-ci.org/imcuttle/get-less-vars)
 [![Test coverage](https://img.shields.io/codecov/c/github/imcuttle/get-less-vars.svg?style=flat-square)](https://codecov.io/github/imcuttle/get-less-vars?branch=master)
@@ -7,7 +7,13 @@
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
 
-> The way for getting variables from less
+> The way for getting computed variables from less
+
+## Why use it?
+
+`get-less-vars` use official `less` for parsing `less` text, then get computed variables.
+
+Rather than using string matching for getting raw value like [less-vars-loader](https://www.npmjs.com/package/less-vars-loader).
 
 ## Installation
 

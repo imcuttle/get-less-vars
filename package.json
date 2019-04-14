@@ -2,7 +2,7 @@
   "name": "get-less-vars",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "The way for getting variables from less",
+  "description": "The way for getting computed variables from less",
   "author": "imcuttle <moyuyc95@gmail.com>",
   "scripts": {
     "test": "jest",
@@ -24,6 +24,7 @@
   "keywords": [
     "imcuttle",
     "get",
+    "computed",
     "less",
     "vars",
     "webpack",
