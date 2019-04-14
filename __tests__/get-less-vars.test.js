@@ -76,4 +76,31 @@ Object {
       })
     ).toEqual({})
   })
+
+  it('returnRawValue = true', async () => {
+    expect(await lessAst(readSync('ast.less'), { returnRawValue: true, filename: fixture('ast.less') }))
+      .toMatchInlineSnapshot(`
+Object {
+  "abc": "me",
+  "charset.bar": "'xx'",
+  "color": "#222",
+  "config": Object {
+    "left.px": "10px",
+    "options": Object {
+      "deep": Object {
+        "innner": "356px",
+        "left.px": "12px",
+      },
+      "inner.px": "356px",
+    },
+  },
+  "foo": "xx",
+  "left": "334px",
+  "left.px": "356px",
+  "lg.color": "#252525",
+  "ss": "me",
+  "sum": "356px",
+}
+`)
+  })
 })
