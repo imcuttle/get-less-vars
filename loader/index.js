@@ -11,10 +11,7 @@ module.exports = function(content) {
   const loaderContext = this
   const options = getOptions(loaderContext)
 
-  console.log('content', content)
-
   return getLessVars(content, options).then(vars => {
-    // console.log('vars', vars)
     return `module.exports = ${JSON.stringify(vars, null, options.compress ? 0 : 2)}`
   })
 }

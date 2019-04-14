@@ -31,7 +31,6 @@
     "variables",
     "get-less-vars"
   ],
-  "typings": "index.d.ts",
   "license": "MIT",
   "repository": "imcuttle/get-less-vars",
   "jest": {

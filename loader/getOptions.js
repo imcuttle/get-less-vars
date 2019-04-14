@@ -9,12 +9,13 @@ const clone = require('clone')
 const createWebpackLessPlugin = require('less-loader/dist/createWebpackLessPlugin')
 
 function getOptions(loaderContext) {
-  var options = Object.assign(
+  const options = Object.assign(
     {
       plugins: [],
       relativeUrls: true,
       compress: Boolean(loaderContext.minimize),
-      disableWebpackLessPlugin: false
+      disableWebpackLessPlugin: false,
+      nameCase: 'camel'
     },
     clone(loaderUtils.getOptions(loaderContext))
   )
