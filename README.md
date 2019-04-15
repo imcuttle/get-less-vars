@@ -29,7 +29,7 @@ yarn add less get-less-vars
 
 ### getLessVars
 
-[lib/index.js:90-121](https://github.com/imcuttle/get-less-vars/blob/7dc54beb4dba69c599f752544e67e0d42a539f59/lib/index.js#L90-L121 "Source code on GitHub")
+[lib/index.js:90-127](https://github.com/imcuttle/get-less-vars/blob/d3428a1cdf39eef8dd064b52a8ea5a575a6016d6/lib/index.js#L90-L127 "Source code on GitHub")
 
 -   **See: [less options](http://lesscss.org/usage/#less-options)**
 
