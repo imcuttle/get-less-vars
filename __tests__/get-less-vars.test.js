@@ -26,12 +26,19 @@ Object {
   },
   "foo": "xx",
   "left": "334px",
+  "left_33": "me",
   "left_px": "356px",
   "lg_color": "#252525",
   "ss": "me",
   "sum": "356px",
 }
 `)
+  })
+
+  it('should lessAst camel', async () => {
+    expect(
+      (await lessAst(readSync('ast.less'), { filename: fixture('ast.less'), nameCase: 'camel' })).left33
+    ).toMatchInlineSnapshot(`"me"`)
   })
 
   it('should lessAst with namecase', async () => {
@@ -53,6 +60,7 @@ Object {
   },
   "foo": "xx",
   "left": "334px",
+  "left.33": "me",
   "left.px": "356px",
   "lg.color": "#252525",
   "ss": "me",
