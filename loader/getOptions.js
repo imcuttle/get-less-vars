@@ -15,7 +15,8 @@ function getOptions(loaderContext) {
       relativeUrls: true,
       compress: Boolean(loaderContext.minimize),
       disableWebpackLessPlugin: false,
-      nameCase: 'camel'
+      nameCase: 'camel',
+      modules: 'es'
     },
     clone(loaderUtils.getOptions(loaderContext))
   )
