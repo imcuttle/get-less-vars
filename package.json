@@ -1,6 +1,6 @@
 {
   "name": "get-less-vars",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index.js",
   "description": "The way for getting computed variables from less",
   "author": "imcuttle <moyuyc95@gmail.com>",
