@@ -18,9 +18,9 @@ Rather than using string matching for getting raw value like [less-vars-loader](
 ## Installation
 
 ```bash
-npm install less get-less-vars
+npm install less@3.9 get-less-vars
 # or use yarn
-yarn add less get-less-vars
+yarn add less@3.9 get-less-vars
 ```
 
 ## API
@@ -29,16 +29,16 @@ yarn add less get-less-vars
 
 ### getLessVars
 
-[lib/index.js:90-127](https://github.com/imcuttle/get-less-vars/blob/f1fe5c7588f2aea44ed71c058c245acdcf9ee433/lib/index.js#L90-L127 "Source code on GitHub")
+[lib/index.js:90-127](https://github.com/imcuttle/get-less-vars/blob/f1fe5c7588f2aea44ed71c058c245acdcf9ee433/lib/index.js#L90-L127 'Source code on GitHub')
 
--   **See: [less options](http://lesscss.org/usage/#less-options)**
+- **See: [less options](http://lesscss.org/usage/#less-options)**
 
 #### Parameters
 
--   `lessText`  {string}
--   `options`  {{}}
-    -   `options.nameCase`  {string}
-           Use [change-case](https://www.npmjs.com/package/change-case) for varied name case. (optional, default `null`)
+- `lessText` {string}
+- `options` {{}}
+  - `options.nameCase` {string}
+    Use [change-case](https://www.npmjs.com/package/change-case) for varied name case. (optional, default `null`)
 
 #### Examples
 
@@ -60,7 +60,7 @@ const fs = require('fs')
 })()
 ```
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;{}>** 
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;{}>**
 
 ## Regard as a webpack loader
 
@@ -73,24 +73,24 @@ The options extend get-less-var
 Whether disable the less plugin from [less-loader](https://github.com/webpack-contrib/less-loader/blob/3d6e9e9204a9e02cde5a65e9a9f6b10bd564f365/src/createWebpackLessPlugin.js)  
 which enhanced the `@import` like `@import '~lib/foo.less'`
 
--   **Type:** `boolean`
--   **Default:** `false`
+- **Type:** `boolean`
+- **Default:** `false`
 
 #### `nameCase`
 
--   **Type:** `string`
--   **Default:** `'camel'`
+- **Type:** `string`
+- **Default:** `'camel'`
 
 #### `modules`
 
 Export variables by which way, It's useful for [tree shaking](https://webpack.docschina.org/guides/tree-shaking/) by using 'es'.
 
--   **Type:** `'es'|'cjs'`
--   **Default:** `'es'`
+- **Type:** `'es'|'cjs'`
+- **Default:** `'es'`
 
 ### Example
 
--   `main.less`
+- `main.less`
 
 ```less
 @main_color: red;
@@ -100,7 +100,7 @@ Export variables by which way, It's useful for [tree shaking](https://webpack.do
 };
 ```
 
--   `main.js`
+- `main.js`
 
 ```javascript
 import { config, mainColor } from '!get-less-vars/loader!./main.less'
@@ -110,15 +110,15 @@ import { config, mainColor } from '!get-less-vars/loader!./main.less'
 
 ## Contributing
 
--   Fork it!
--   Create your new branch:  
-    `git checkout -b feature-new` or `git checkout -b fix-which-bug`
--   Start your magic work now
--   Make sure npm test passes
--   Commit your changes:  
-    `git commit -am 'feat: some description (close #123)'` or `git commit -am 'fix: some description (fix #123)'`
--   Push to the branch: `git push`
--   Submit a pull request :)
+- Fork it!
+- Create your new branch:  
+  `git checkout -b feature-new` or `git checkout -b fix-which-bug`
+- Start your magic work now
+- Make sure npm test passes
+- Commit your changes:  
+  `git commit -am 'feat: some description (close #123)'` or `git commit -am 'fix: some description (fix #123)'`
+- Push to the branch: `git push`
+- Submit a pull request :)
 
 ## Authors
 
