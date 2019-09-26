@@ -45,7 +45,7 @@
     ]
   },
   "peerDependencies": {
-    "less": "^3.9.0"
+    "less": "~3.9.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
