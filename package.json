@@ -52,7 +52,7 @@
     "@commitlint/config-conventional": "^7.5.0",
     "@types/jest": "^23.3.14",
     "conventional-changelog-cli": "^2.0.12",
-    "documentation": "^9.3.1",
+    "documentation": "^14.0.0",
     "husky": "^1.3.1",
     "jest": "^23.6.0",
     "less": "^3.9.0",
